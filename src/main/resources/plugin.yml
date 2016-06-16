@@ -1,0 +1,11 @@
+name: ProxySuiteBukkit
+main: de.sabbertran.proxysuite.bukkit.ProxySuiteBukkit
+version: 0.9.12-RC
+website: http://www.sabbertran.de
+author: Sabbertran
+description: ProxySuite Bukkit handler
+softdepend: [WorldEdit, WorldGuard, Vault]
+commands:
+   bun:
+     description: Execute a BungeeCord command as the console or a player
+     usage: /bun <player>|CONSOLE <command>
