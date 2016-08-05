@@ -88,17 +88,16 @@ public class PortalHandler {
     }
 
     public void addPortal(Portal p) {
-        for (Iterator<Portal> it = portals.iterator(); it.hasNext(); ) {
-            Portal po = it.next();
-            if (po.getName().equals(p.getName()))
-                it.remove();
-        }
+        removePortal(p.getName());
         portals.add(p);
     }
 
     public void removePortal(String name) {
-        for (Portal po : portals)
+        Iterator<Portal> it = portals.iterator();
+        while (it.hasNext()) {
+            Portal po = it.next();
             if (po.getName().equals(name))
                 portals.remove(po);
+        }
     }
 }
