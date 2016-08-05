@@ -97,7 +97,7 @@ public class PortalHandler {
         while (it.hasNext()) {
             Portal po = it.next();
             if (po.getName().equals(name))
-                portals.remove(po);
+                it.remove();
         }
     }
 }
