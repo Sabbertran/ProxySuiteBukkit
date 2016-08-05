@@ -45,7 +45,7 @@ public class Events implements Listener {
                     public void run() {
                         p.sendPluginMessage(main, "ProxySuite", b.toByteArray());
                     }
-                }, 1);
+                }, 2);
             }
             String suffix = main.getChat().getPlayerSuffix(p);
             if (!suffix.equals("")) {
@@ -62,7 +62,7 @@ public class Events implements Listener {
                     public void run() {
                         p.sendPluginMessage(main, "ProxySuite", b.toByteArray());
                     }
-                }, 1);
+                }, 2);
             }
         }
 
