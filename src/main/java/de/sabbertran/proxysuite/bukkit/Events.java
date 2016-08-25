@@ -31,7 +31,7 @@ public class Events implements Listener {
 
         if (main.getChat() != null) {
             String prefix = main.getChat().getPlayerPrefix(p);
-            if (!prefix.equals("")) {
+            if (prefix != null && !prefix.equals("")) {
                 final ByteArrayOutputStream b = new ByteArrayOutputStream();
                 DataOutputStream out = new DataOutputStream(b);
                 try {
@@ -48,7 +48,7 @@ public class Events implements Listener {
                 }, 2);
             }
             String suffix = main.getChat().getPlayerSuffix(p);
-            if (!suffix.equals("")) {
+            if (suffix != null && !suffix.equals("")) {
                 final ByteArrayOutputStream b = new ByteArrayOutputStream();
                 DataOutputStream out = new DataOutputStream(b);
                 try {
